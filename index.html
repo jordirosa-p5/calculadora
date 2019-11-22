@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calculator">
+
+        <input type="text" id="pantalla" class="calculator-screen" value="0" disabled />
+
+        <div class="calculator-keys">
+
+            <button type="button" class="operator" value="+" onclick="afegeix('+')">+</button>
+            <button type="button" class="operator" value="-" onclick="afegeix('-')">-</button>
+            <button type="button" class="operator" value="*" onclick="afegeix('*')">&times;</button>
+            <button type="button" class="operator" value="/" onclick="afegeix('/')">&divide;</button>
+
+            <button type="button" value="7" onclick="afegeix('7')">7</button>
+            <button type="button" value="8" onclick="afegeix('8')">8</button>
+            <button type="button" value="9" onclick="afegeix('9')">9</button>
+
+
+            <button type="button" value="4" onclick="afegeix('4')">4</button>
+            <button type="button" value="5" onclick="afegeix('5')">5</button>
+            <button type="button" value="6" onclick="afegeix('6')">6</button>
+
+
+            <button type="button" value="1" onclick="afegeix('1')">1</button>
+            <button type="button" value="2" onclick="afegeix('2')">2</button>
+            <button type="button" value="3" onclick="afegeix('3')">3</button>
+
+
+            <button type="button" value="0" onclick="afegeix('0')">0</button>
+            <button type="button" class="decimal" value="." onclick="afegeix('.')">.</button>
+            <button type="button" class="all-clear" value="all-clear" onclick="neteja()">AC</button>
+
+            <button type="button" class="equal-sign" value="=">=</button>
+
+        </div>
+    </div>
+    <script src="js/codi.js"></script>
+</body>
+
+</html>
